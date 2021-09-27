@@ -93,7 +93,7 @@ def get_number_aliens_x(sys_settings,alien_width):
     number_alien_x = int(available_space_x / (2 * alien_width))
     return number_alien_x
 
-def create_fleet(sys_settings,screen,ship,aliens):
+def create_fleet(sys_settings,screen,ship,aliens,stats):
     alien=Alien(sys_settings,screen)
     number_aliens_x=get_number_aliens_x(sys_settings,alien.rect.width)
     number_rows=get_number_rows(sys_settings,ship.rect.height,alien.rect.height)
